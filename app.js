@@ -59,7 +59,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-foods.splice(2,0,'tofu')
+foods.splice(2, 0, 'tofu')
 
 console.log('Exercise 5 result:', foods);
 
@@ -71,7 +71,7 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-const removed = foods.splice(1,1,'sushi', 'cupcake')
+const removed = foods.splice(1, 1, 'sushi', 'cupcake')
 
 console.log('Exercise 6 result:', foods);
 
@@ -86,7 +86,7 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 
-const yummy = foods.slice(1,3)
+const yummy = foods.slice(1, 3)
 
 console.log('Exercise 7 result:', yummy);
 
@@ -155,8 +155,8 @@ const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 const odds = [];
 
 nums.forEach((nums) => {
-    if (nums % 2 !=0) {
-    odds.push(nums);
+    if (nums % 2 != 0) {
+        odds.push(nums);
     }
 });
 
@@ -189,19 +189,19 @@ const fizzbuzz = [];
 nums.forEach((nums) => {
     if (nums % 3 === 0) {
         fizz.push(nums);
-    } 
+    }
     if (nums % 5 === 0) {
         buzz.push(nums);
-    } 
-    if (nums % 3 ===0 || nums % 5 ===0) {
-        fizzbuzz.push(nums)
+    }
+    if (nums % 3 === 0 && nums % 5 === 0) {
+        fizzbuzz.push(nums);
     }
 });
 
 console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+console.log('fizz:', fizz);
+console.log('buzz:', buzz);
+console.log('fizzbuzz:', fizzbuzz);
 
 /*
 Exercise 13: Retrieve the Last Array
@@ -222,7 +222,7 @@ const numArrays = [
     [7, 81, 90]
 ];
 
-const numList = numArrays[numArrays.length-1];
+const numList = numArrays[numArrays.length - 1];
 
 console.log('Exercise 13 result:', numList);
 
